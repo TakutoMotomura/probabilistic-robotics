@@ -232,3 +232,34 @@ if __name__ == "__main__":
     #world.append(robot3)
     
     world.draw()
+
+
+# In[9]:
+
+
+# state_transitionをIdealRobotのオブジェクト外で使うときは、クラス名を頭に使う
+## 原点から0.1m/secで1sec直進
+#IdealRobot.state_transition(0.1,0.0,1.0,np.array([0,0,0]).T)
+
+
+# In[10]:
+
+
+## 原点から0.1m/sec、10deg/sで9sec直進
+#IdealRobot.state_transition(0.1,10/180*math.pi,9.0,np.array([0,0,0]).T)
+
+
+# In[11]:
+
+
+## 原点から0.1m/secで18sec直進
+#IdealRobot.state_transition(0.1,10/180*math.pi,18.0,np.array([0,0,0]).T)
+
+
+# In[12]:
+
+
+#cam = IdealCamera(m)
+#p = cam.data(robot2.pose)
+#print(p)
+
